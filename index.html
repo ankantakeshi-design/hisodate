@@ -52,7 +52,7 @@
   header.top .name { font-weight:900; font-size:20px; letter-spacing:.04em; }
   header.top .name small { display:block; font-size:11px; font-weight:700; color:#8a7f72; letter-spacing:.08em; }
 
-  /* Hero */
+  /* Hero（ファーストビュー：一つのメッセージ＋一つの行動） */
   .hero { text-align:center; padding:20px 0 8px; }
   .hero img.mark-big {
     display:block; margin:0 auto;
@@ -72,12 +72,18 @@
   .hero .juku-name {
     margin-top:20px; font-size:26px; font-weight:900; line-height:1.5; color:#F0502E;
   }
-  .hero p.lead { margin-top:14px; font-size:16px; font-weight:500; color:#4a4238; }
-  .hero .note-mini { margin-top:10px; font-size:13px; color:#8a7f72; }
+  .hero .hero-action { margin-top:30px; }
+  .hero .hero-action .btn-apply { margin-top:0; padding:14px 38px; font-size:16px; }
+
+  /* 塾の説明（一つだけのブロックとして独立） */
+  .lead-block {
+    margin-top:72px; text-align:center;
+    font-size:16px; font-weight:500; color:#4a4238; line-height:2.1;
+  }
 
   /* 核のメッセージ */
   .core-msg {
-    margin-top:36px; text-align:center;
+    margin-top:30px; text-align:center;
     background:linear-gradient(135deg,#FFF3EC 0%,#FFFDFB 50%,#EEF4FB 100%);
     border:2px solid #F3D9C8; border-radius:20px;
     padding:30px 22px;
@@ -88,15 +94,18 @@
   .core-msg .f { color:#F0502E; }
   .core-msg .w { color:#2B6CB0; }
 
-  /* Sections */
-  section.block { margin-top:44px; }
+  /* Sections（一つずつ、間隔を広く） */
+  section.block { margin-top:76px; }
   section.block > h2 {
     font-size:22px; font-weight:900; text-align:center; line-height:1.5;
   }
   section.block > p.sub {
     text-align:center; font-size:14px; color:#6b5f4f; margin-top:6px; font-weight:500;
   }
-  .points { margin-top:20px; display:grid; gap:14px; }
+  section.block .note-mini {
+    margin-top:18px; text-align:center; font-size:13px; color:#8a7f72;
+  }
+  .points { margin-top:22px; display:grid; gap:22px; }
   .point {
     background:#fff; border:2px solid #F3E9DE; border-radius:18px; padding:18px;
   }
@@ -104,7 +113,7 @@
   .point h3 .f { color:#F0502E; } .point h3 .w { color:#2B6CB0; }
   .point p { margin-top:6px; font-size:15px; color:#4a4238; }
   .closing-line {
-    margin-top:18px; text-align:center; font-size:15px; font-weight:700; color:#4a4238;
+    margin-top:22px; text-align:center; font-size:15px; font-weight:700; color:#4a4238;
   }
 
   /* 場面イラスト */
@@ -116,14 +125,14 @@
 
   /* 妻の体験談・感想 */
   .voice {
-    margin-top:20px; background:#EEF4FB; border-radius:20px; padding:26px 22px;
+    margin-top:24px; background:#EEF4FB; border-radius:20px; padding:26px 22px;
   }
   .voice .q { font-size:16px; font-weight:500; color:#2B4C7E; line-height:2.0; }
   .voice .who { margin-top:14px; text-align:right; font-weight:900; font-size:14px; color:#2B4C7E; }
 
   /* 会話の流れ */
   .talk {
-    margin-top:20px; background:#fff; border:2px solid #F3E9DE; border-radius:20px; padding:22px 20px;
+    margin-top:22px; background:#fff; border:2px solid #F3E9DE; border-radius:20px; padding:22px 20px;
   }
   .talk .line { display:flex; gap:10px; margin-top:12px; align-items:flex-start; }
   .talk .line:first-child { margin-top:0; }
@@ -136,10 +145,10 @@
   .talk .txt { font-size:15px; font-weight:700; color:#4a4238; }
 
   /* Cards */
-  .cards { margin-top:20px; display:grid; gap:16px; }
   .card {
     display:block; text-decoration:none; background:#fff;
     border:2px solid #F3E9DE; border-radius:20px; padding:22px 20px;
+    margin-top:22px;
   }
   .card .tag {
     display:inline-block; font-size:12px; font-weight:900; color:#fff;
@@ -153,7 +162,7 @@
 
   /* Profile */
   .profile {
-    margin-top:20px; background:#FFF8F1; border-radius:20px; padding:24px 20px;
+    margin-top:22px; background:#FFF8F1; border-radius:20px; padding:24px 20px;
   }
   .profile img.face-mini { display:block; width:76px; height:76px; border-radius:50%; margin:2px auto 8px; object-fit:cover; }
   .profile h3 { font-size:18px; font-weight:900; text-align:center; }
@@ -174,14 +183,14 @@
 
   /* トップへ戻るボタン */
   .back-top {
-    display:block; margin:44px auto 0; max-width:440px;
+    display:block; margin:56px auto 0; max-width:440px;
     background:#fff; border:2px solid #F0502E; border-radius:999px;
     color:#F0502E; text-decoration:none; font-weight:900; font-size:16px;
     padding:13px 20px; text-align:center;
   }
 
   footer {
-    margin-top:40px; text-align:center; font-size:13px; color:#8a7f72; font-weight:500;
+    margin-top:48px; text-align:center; font-size:13px; color:#8a7f72; font-weight:500;
   }
   footer .fname { font-weight:900; color:#2B2B2B; font-size:15px; }
   footer a { color:#2B6CB0; font-weight:700; }
@@ -194,20 +203,25 @@
     <div class="name">心体調整塾<small>火水性質分析 × パートナーシップ</small></div>
   </header>
 
+  <!-- ファーストビュー：一つのメッセージ（感じているのに、言葉にできない）＋核メッセージ＋イラスト＋行動は無料相談フォームへの1つだけ -->
   <div class="hero">
     <img class="mark-big" src="kasui-icon.png" alt="火と水のマーク">
     <div><span class="pill">水女子のための、言語化サポート</span></div>
     <h1>感じているのに、<br><span class="water">言葉にできない</span>。</h1>
     <p class="juku-name">水女子のための火育て塾🔥</p>
-    <p class="lead">たくさん感じているのに、言葉にならなくて、<br>モヤモヤが心と体に溜まっていく——。<br>ここは、あなたの気持ちを言葉にして、<br>外に出せるようになるための学びの塾です。</p>
-    <p class="note-mini">無料相談の質問募集をはじめました。有料グループは開設準備中です。</p>
     <figure class="scene"><img src="hisodate-announce-v5.jpg" alt="水女子のための火育て塾🔥 胸に小さな火が灯って、イキイキと元気いっぱいのみーちゃん。自分のことを大事にしよう"></figure>
+    <div class="core-msg">
+      <p>他人ばかりを大事にしてしまう。<br>だから、この塾で育てるのは<br>「<span class="f">自分を大事にする</span>」力です。<br>その手始めが、<span class="w">言語化</span>。<br>感じたことを、言葉にすること。</p>
+    </div>
+    <div class="hero-action">
+      <a class="btn-apply" href="https://docs.google.com/forms/d/e/1FAIpQLSfNGNr6cvlschKhOpba21nqjH-dsHbYe1DxWrMYAk1j_oN9NA/viewform" target="_blank" rel="noopener">質問・相談を送る</a>
+    </div>
   </div>
 
-  <div class="core-msg">
-    <p>他人ばかりを大事にしてしまう。<br>だから、この塾で育てるのは<br>「<span class="f">自分を大事にする</span>」力です。<br>その手始めが、<span class="w">言語化</span>。<br>感じたことを、言葉にすること。</p>
-  </div>
+  <!-- 一つ目：この塾は、どんな場所か -->
+  <p class="lead-block">たくさん感じているのに、言葉にならなくて、<br>モヤモヤが心と体に溜まっていく——。<br>ここは、あなたの気持ちを言葉にして、<br>外に出せるようになるための学びの塾です。</p>
 
+  <!-- 二つ目：できるようになること -->
   <section class="block">
     <h2>この塾で、できるようになること</h2>
     <p class="sub">モヤモヤを、言葉に変えていく場所</p>
@@ -228,6 +242,7 @@
     <p class="closing-line">水男子や、学びたい火男子・火女子も参加OKです。<br>大事なのは、正解の言葉を当てることじゃなくて、<br>「あなたの言葉」が見つかることです。</p>
   </section>
 
+  <!-- 三つ目：塾の進み方 -->
   <section class="block">
     <h2>塾の進み方</h2>
     <p class="sub">質問・相談を送ると、たけちゃんが選んで答えます。<br>そのやりとりを、みんなで共有して学ぶ塾です</p>
@@ -251,6 +266,7 @@
     </div>
   </section>
 
+  <!-- 四つ目：妻の体験談 -->
   <section class="block">
     <h2>妻の体験談</h2>
     <p class="sub">水が強い妻が、言葉にできるようになるまで</p>
@@ -260,6 +276,7 @@
     </div>
   </section>
 
+  <!-- 五つ目：いただいた感想 -->
   <section class="block">
     <h2>いただいた感想</h2>
     <p class="sub">言葉にできるようになった、変化の声</p>
@@ -283,28 +300,34 @@
     </div>
   </section>
 
+  <!-- 六つ目：参加のご案内（無料相談） -->
   <section class="block">
     <h2>参加のご案内</h2>
     <p class="sub">「私も、言葉にできるようになりたい」<br>そう思ってくださった方へ</p>
-    <div class="cards">
-      <div class="card">
-        <span class="tag water">無料相談</span>
-        <h3>無料相談・質問募集</h3>
-        <p>質問・相談は、Googleフォームから送れます。寄せられた中から、週3〜5個くらいを目安に、たけちゃんが選んで、Threads・noteなどで公開でお答えします（匿名で、個人が分かる情報は出しません）。自分の質問が選ばれなくても、他の人の質問と答えを読むことで、自分の気持ちを言葉にするヒントが見つかります。</p>
-        <p style="margin-top:10px;">※ 送るときは、本名や連絡先など、個人が分かる情報は入れないでください。</p>
-        <a class="btn-apply" href="https://docs.google.com/forms/d/e/1FAIpQLSfNGNr6cvlschKhOpba21nqjH-dsHbYe1DxWrMYAk1j_oN9NA/viewform" target="_blank" rel="noopener">質問・相談を送る</a>
-      </div>
-      <div class="card">
-        <span class="tag fire">有料グループ</span>
-        <h3>noteメンバーシップ</h3>
-        <p>noteのメンバーシップ（有料）です。週10〜15個くらいの質問・相談への回答に加えて、「火パワーアップ」の学習もできます。もっとたくさん質問したい、しっかり学びたい方向けのグループです。</p>
-        <p style="margin-top:10px; font-weight:900; color:#8a7f72;">ただいま開設準備中です</p>
-        <span class="btn-soon">申し込む（準備中）</span>
-      </div>
+    <div class="card">
+      <span class="tag water">無料相談</span>
+      <h3>無料相談・質問募集</h3>
+      <p>質問・相談は、Googleフォームから送れます。寄せられた中から、週3〜5個くらいを目安に、たけちゃんが選んで、Threads・noteなどで公開でお答えします（匿名で、個人が分かる情報は出しません）。自分の質問が選ばれなくても、他の人の質問と答えを読むことで、自分の気持ちを言葉にするヒントが見つかります。</p>
+      <p style="margin-top:10px;">※ 送るときは、本名や連絡先など、個人が分かる情報は入れないでください。</p>
+      <a class="btn-apply" href="https://docs.google.com/forms/d/e/1FAIpQLSfNGNr6cvlschKhOpba21nqjH-dsHbYe1DxWrMYAk1j_oN9NA/viewform" target="_blank" rel="noopener">質問・相談を送る</a>
+    </div>
+    <p class="note-mini">無料相談の質問募集をはじめました。有料グループは開設準備中です。</p>
+  </section>
+
+  <!-- 七つ目：有料グループのご案内 -->
+  <section class="block">
+    <h2>有料グループのご案内</h2>
+    <div class="card">
+      <span class="tag fire">有料グループ</span>
+      <h3>noteメンバーシップ</h3>
+      <p>noteのメンバーシップ（有料）です。週10〜15個くらいの質問・相談への回答に加えて、「火パワーアップ」の学習もできます。もっとたくさん質問したい、しっかり学びたい方向けのグループです。</p>
+      <p style="margin-top:10px; font-weight:900; color:#8a7f72;">ただいま開設準備中です</p>
+      <span class="btn-soon">申し込む（準備中）</span>
     </div>
     <p class="closing-line">有料グループの開設が決まったら、このページとInstagram・noteでご案内します。</p>
   </section>
 
+  <!-- 八つ目：たけちゃんについて -->
   <section class="block">
     <h2>たけちゃんについて</h2>
     <div class="profile">
