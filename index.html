@@ -196,6 +196,18 @@
   footer .fname { font-weight:900; color:#2B2B2B; font-size:15px; }
   footer a { color:#2B6CB0; font-weight:700; display:inline-block; padding:10px 8px; }
 </style>
+<style>
+/* FAQ（よくある質問） */
+.faq-sec{margin:48px auto 0;text-align:left;}
+.faq-sec>h2{font-size:14px;font-weight:700;letter-spacing:.1em;text-align:center;margin:0 0 10px;color:#7A6C5E;}
+.faq-item{border-top:1px solid #EAE2D8;}
+.faq-item:last-child{border-bottom:1px solid #EAE2D8;}
+.faq-item summary{cursor:pointer;list-style:none;padding:15px 26px 15px 4px;font-size:15px;font-weight:700;line-height:1.6;position:relative;color:#2B2B2B;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"＋";position:absolute;right:6px;top:15px;font-size:13px;color:#7A6C5E;font-weight:400;}
+.faq-item[open ] summary::after{content:"−";}
+.faq-a{padding:2px 4px 18px;font-size:15px;line-height:1.9;color:#2B2B2B;}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -356,7 +368,17 @@
 
   <a class="back-top" href="https://sintaichoseijyuku.pages.dev/">心体調整塾 トップページへ →</a>
 
-  <footer>
+    <section class="faq-sec" aria-label="よくある質問">
+  <h2>よくある質問</h2>
+  <details class="faq-item"><summary>水女子のための火育て塾は、どんな塾ですか？</summary><div class="faq-a">感じているのに言葉にできない、水の性質が強い女性が、自分の気持ちを言葉にできるようになるための学びの塾です。育てるのは、「他人ばかりを大事にしてしまう」から「自分を大事にする」力。その手始めが、言語化です。質問・相談に、たけちゃんが言葉の候補を当てながら答え、そのやりとりをみんなで共有して学ぶ、非同期の学びの場です。個人セッションの形ではありません。</div></details>
+  <details class="faq-item"><summary>感じていることを、うまく言葉にできません。それでも相談できますか？</summary><div class="faq-a">大丈夫ですよ。まとまっていなくて大丈夫です。「なんかモヤモヤする」でも、体の感じでも、断片でも、そのまま送ってくださいね。言葉の候補は、たけちゃんが「これは？」「あれは？」と当てながら、一緒に探します。一人で「うまく言わなきゃ」と頑張らなくて大丈夫です。</div></details>
+  <details class="faq-item"><summary>相談は、匿名でできますか？</summary><div class="faq-a">できます。無料相談はGoogleフォームから送れて、メールアドレスの収集もありません。送るときは、本名や連絡先など、個人が分かる情報は入れないでくださいね。公開でお答えする分も、個人が分かる情報は出さない形でお答えします。</div></details>
+  <details class="faq-item"><summary>相談したら、必ず答えてもらえますか？</summary><div class="faq-a">寄せられた中から、週3〜5個くらいを目安に、たけちゃんが選んでお答えしています。自分の質問が選ばれなかったときも、他の方の質問と答えを読む中で、「あ、それ私も」と自分の言葉が見つかることが、よくありますよ。</div></details>
+  <details class="faq-item"><summary>利用は無料ですか？</summary><div class="faq-a">無料相談は、無料です。有料グループ（noteメンバーシップ）は、ただいま開設準備中です。開設が決まったら、このページとInstagram・noteでご案内します。</div></details>
+  <details class="faq-item"><summary>水女子ではないのですが、参加できますか？</summary><div class="faq-a">参加できますよ。水男子の方も、学びたい火男子・火女子の方も、歓迎です。大事なのは性質のラベルではなく、「あなたの言葉」が見つかることです。</div></details>
+  <details class="faq-item"><summary>誰が答えてくれるのですか？</summary><div class="faq-a">心体調整塾の、たけちゃんです。火の性質が強く、言葉で考えて整理するのが得意な分、感じることは苦手でした。結婚15年の会話の中で、水の強い妻が自分の気持ちを言語化して外に出すのを、たくさん手伝ってきました。その経験をもとに、お答えしています。</div></details>
+  </section>
+<footer>
     <div class="fname">心体調整塾</div>
     火水性質分析 × パートナーシップ<br>
     <a href="https://sintaichoseijyuku.pages.dev/">ホームページ本体（トップ）へ</a><br>
@@ -364,5 +386,69 @@
   </footer>
 
 </div>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "水女子のための火育て塾は、どんな塾ですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "感じているのに言葉にできない、水の性質が強い女性が、自分の気持ちを言葉にできるようになるための学びの塾です。育てるのは、「他人ばかりを大事にしてしまう」から「自分を大事にする」力。その手始めが、言語化です。質問・相談に、たけちゃんが言葉の候補を当てながら答え、そのやりとりをみんなで共有して学ぶ、非同期の学びの場です。個人セッションの形ではありません。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "感じていることを、うまく言葉にできません。それでも相談できますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "大丈夫ですよ。まとまっていなくて大丈夫です。「なんかモヤモヤする」でも、体の感じでも、断片でも、そのまま送ってくださいね。言葉の候補は、たけちゃんが「これは？」「あれは？」と当てながら、一緒に探します。一人で「うまく言わなきゃ」と頑張らなくて大丈夫です。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "相談は、匿名でできますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "できます。無料相談はGoogleフォームから送れて、メールアドレスの収集もありません。送るときは、本名や連絡先など、個人が分かる情報は入れないでくださいね。公開でお答えする分も、個人が分かる情報は出さない形でお答えします。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "相談したら、必ず答えてもらえますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "寄せられた中から、週3〜5個くらいを目安に、たけちゃんが選んでお答えしています。自分の質問が選ばれなかったときも、他の方の質問と答えを読む中で、「あ、それ私も」と自分の言葉が見つかることが、よくありますよ。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "利用は無料ですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "無料相談は、無料です。有料グループ（noteメンバーシップ）は、ただいま開設準備中です。開設が決まったら、このページとInstagram・noteでご案内します。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "水女子ではないのですが、参加できますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "参加できますよ。水男子の方も、学びたい火男子・火女子の方も、歓迎です。大事なのは性質のラベルではなく、「あなたの言葉」が見つかることです。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "誰が答えてくれるのですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "心体調整塾の、たけちゃんです。火の性質が強く、言葉で考えて整理するのが得意な分、感じることは苦手でした。結婚15年の会話の中で、水の強い妻が自分の気持ちを言語化して外に出すのを、たくさん手伝ってきました。その経験をもとに、お答えしています。"
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>
