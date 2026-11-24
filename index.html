@@ -201,6 +201,12 @@
 .faq-item summary::after{content:"＋";position:absolute;right:6px;top:15px;font-size:13px;color:#7A6C5E;font-weight:400;}
 .faq-item[open ] summary::after{content:"−";}
 .faq-a{padding:2px 4px 18px;font-size:15px;line-height:1.9;color:#2B2B2B;}
+.faq-outer{border:2px solid #EAE2D8;border-radius:14px;background:#FFFDFB;overflow:hidden;}
+.faq-outer>summary{cursor:pointer;list-style:none;min-height:56px;display:flex;align-items:center;justify-content:center;padding:12px 16px;font-size:17px;font-weight:800;color:#2B2B2B;}
+.faq-outer>summary::-webkit-details-marker{display:none;}
+.faq-outer>summary::after{content:"▽";margin-left:10px;font-size:14px;color:#7A6C5E;}
+.faq-outer[open ]>summary::after{content:"△";}
+.faq-inner{padding:2px 14px 14px;}
 </style>
 <script type="application/ld+json">
 {
@@ -412,12 +418,16 @@
   <a class="back-top" href="https://sintaichoseijyuku.pages.dev/">心体調整塾 トップページへ →</a>
 
     <section class="faq-sec" aria-label="よくある質問">
-  <h2>よくある質問</h2>
+  <details class="faq-outer">
+  <summary>よくある質問</summary>
+  <div class="faq-inner">
   <details class="faq-item"><summary>水女子のための火育て塾は、どんな塾ですか？</summary><div class="faq-a">感じているのに言葉にできない、水の性質が強い女性が、自分の気持ちを言葉にできるようになるための学びの塾です。育てるのは、「他人ばかりを大事にしてしまう」から「自分を大事にする」力。その手始めが、言語化です。よくあるモヤモヤの場面を、たけちゃんが記事にして届けています。読む中で「あ、それ私も」と、自分の言葉が見つかる場所です。</div></details>
   <details class="faq-item"><summary>記事は、どこで読めますか？</summary><div class="faq-a">noteのマガジン『水女子のための火育て塾🔥』で読めます。InstagramやThreadsでは、記事の場面の一部を紹介しています。</div></details>
   <details class="faq-item"><summary>記事は、無料で読めますか？</summary><div class="faq-a">基本の記事は、無料で読めます。より深く掘り下げた内容は、noteの有料記事として届けることもあります。</div></details>
   <details class="faq-item"><summary>水女子ではないのですが、読めますか？</summary><div class="faq-a">読めますよ。水男子の方も、学びたい火男子・火女子の方も、歓迎です。大事なのは性質のラベルではなく、「あなたの言葉」が見つかることです。</div></details>
   <details class="faq-item"><summary>誰が書いているのですか？</summary><div class="faq-a">心体調整塾の、たけちゃんです。火の性質が強く、言葉で考えて整理するのが得意な分、感じることは苦手でした。結婚15年の会話の中で、水の強い妻が自分の気持ちを言語化して外に出すのを、たくさん手伝ってきました。その経験をもとに、記事を書いています。</div></details>
+  </div>
+  </details>
 </section>
 <footer>
     <div class="fname">心体調整塾</div>
