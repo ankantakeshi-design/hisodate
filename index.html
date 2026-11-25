@@ -226,6 +226,19 @@
 .faq-outer>summary::after{content:"▽";margin-left:10px;font-size:14px;color:#7A6C5E;}
 .faq-outer[open ]>summary::after{content:"△";}
 .faq-inner{padding:2px 14px 14px;}
+
+  /* セクション折りたたみ＋カテゴリー（2026-11-25） */
+  .sec-fold{ margin-top:12px; }
+  .sec-fold > summary{ justify-content:flex-start; }
+  .sec-fold > summary .gimg{ width:44px; height:44px; object-fit:cover; border-radius:10px; flex:none; }
+  .sec-fold > summary .chev{ margin-left:auto; }
+  .cat-fold{ border:2px solid #EAD9C2; border-radius:18px; background:#FFF9EE; margin:18px 0; overflow:hidden; }
+  .cat-fold > summary{ list-style:none; cursor:pointer; min-height:64px; display:flex; align-items:center; gap:12px; padding:12px 16px; font-size:18px; font-weight:900; color:#4A2F14; }
+  .cat-fold > summary::-webkit-details-marker{ display:none; }
+  .cat-fold > summary .chev{ margin-left:auto; font-size:14px; color:#B07B2A; }
+  .cat-fold .cat-thumb{ width:44px; height:44px; object-fit:cover; border-radius:10px; flex:none; }
+  .cat-body{ padding:6px 12px 14px; }
+  .cat-body .block{ margin-top:14px; }
 </style>
 <script type="application/ld+json">
 {
@@ -305,9 +318,9 @@
   <p class="lead-block">たくさん感じているのに、言葉にならなくて、<br>モヤモヤが心と体に溜まっていく——。<br>ここは、あなたの気持ちを言葉にして、<br>外に出せるようになるための学びの塾です。</p>
 
   <!-- 二つ目：できるようになること -->
-  <section class="block">
-    <h2>この塾で、できるようになること</h2>
-    <p class="sub">モヤモヤを、言葉に変えていく場所</p>
+  <details class="cat-fold"><summary><img class="cat-thumb" src="gengoka-hisodate.jpg" alt="" loading="lazy">塾について<span class="chev">▽</span></summary><div class="cat-body">
+<section class="block">
+    <h2>この塾で、できるようになること</h2><details class="voice-fold sec-fold"><summary><img class="gimg" src="gengoka-hisodate.jpg" alt="" loading="lazy" width="96" height="96">できることを見る<span class="chev">▽</span></summary><div class="fold-body"> <p class="sub">モヤモヤを、言葉に変えていく場所</p>
     <div class="points">
       <div class="point">
         <h3>① モヤモヤを言語化して、分解する</h3>
@@ -322,13 +335,9 @@
         <p>自分の気持ちを自分で理解できると、旦那さんにも、周りの人にも、「これだよ」と言葉で伝えられるようになります。「察してほしい」と待つだけじゃなくなるんです。その積み重ねが、その人の中の<span class="f">火</span>を育てます。</p>
       </div>
     </div>
-    <p class="closing-line">水男子や、学びたい火男子・火女子の方にも、開かれています。<br>大事なのは、正解の言葉を当てることじゃなくて、<br>「あなたの言葉」が見つかることです。</p>
-  </section>
-
-  <!-- 三つ目：この塾の学び方 -->
-  <section class="block">
-    <h2>この塾の学び方</h2>
-    <p class="sub">よくあるモヤモヤの場面を、たけちゃんが記事にして届けます。<br>読む中で、自分の言葉が見つかっていく塾です</p>
+    <p class="closing-line">水男子や、学びたい火男子・火女子の方にも、開かれています。<br>大事なのは、正解の言葉を当てることじゃなくて、<br>「あなたの言葉」が見つかることです。</p> </div></details> </section>
+<section class="block">
+    <h2>この塾の学び方</h2><details class="voice-fold sec-fold"><summary><img class="gimg" src="hisodate-announce-v5.jpg" alt="" loading="lazy" width="96" height="96">学び方を見る<span class="chev">▽</span></summary><div class="fold-body"> <p class="sub">よくあるモヤモヤの場面を、たけちゃんが記事にして届けます。<br>読む中で、自分の言葉が見つかっていく塾です</p>
     <div class="points">
       <div class="point">
         <h3>① よくあるモヤモヤの場面を、記事で届ける</h3>
@@ -346,23 +355,17 @@
     <div class="talk">
       <div class="line"><span class="who f">たけちゃん</span><span class="txt">その感じ、「悔しい」に近い？　それとも「寂しい」？</span></div>
       <div class="line"><span class="who w">あなた</span><span class="txt">……あ、それそれ。「置いていかれたみたいで、寂しかった」んだ</span></div>
-    </div>
-  </section>
-
-  <!-- 四つ目：妻の体験談 -->
-  <section class="block">
-    <h2>妻の体験談</h2>
-    <p class="sub">水が強い妻が、言葉にできるようになるまで</p>
+    </div> </div></details> </section>
+</div></details>
+<details class="cat-fold"><summary><img class="cat-thumb" src="mori-card.jpg" alt="" loading="lazy">みんなの声<span class="chev">▽</span></summary><div class="cat-body">
+<section class="block">
+    <h2>妻の体験談</h2><details class="voice-fold sec-fold"><summary><img class="gimg" src="mori-card.jpg" alt="" loading="lazy" width="96" height="96">体験談を読む<span class="chev">▽</span></summary><div class="fold-body"> <p class="sub">水が強い妻が、言葉にできるようになるまで</p>
     <div class="voice">
       <p class="q">「私は、水が強くて、たくさん感じているのに、言葉にするのが全然できなかったんです。たけちゃんとたくさん会話することで、感じていたけど言葉にできなかったものが、どんどん言葉として出てくるようになりました。体にたまらなくなった感じがあって、今は感じているものをたくさん話すことが、すごく楽しくなっています。とても力強くサポートしてもらって、本当に良かったと思っています。言語化の喜びを感じられる女性が増えたらいいなと思っています。」</p>
       <p class="who">―― たけちゃんの妻（水の性質が強い）</p>
-    </div>
-  </section>
-
-  <!-- 五つ目：いただいた感想 -->
-  <section class="block">
-    <h2>いただいた感想</h2>
-    <p class="sub">言葉にできるようになった、変化の声</p>
+    </div> </div></details> </section>
+<section class="block">
+    <h2>いただいた感想</h2><details class="voice-fold sec-fold"><summary><img class="gimg" src="face-icon.jpg" alt="" loading="lazy" width="96" height="96">感想を見る<span class="chev">▽</span></summary><div class="fold-body"> <p class="sub">言葉にできるようになった、変化の声</p>
     <div class="voice">
       <p class="q">「実家でトラブルになりたくなくて、イヤな気持ちを隠してニコニコしてた。<br>子どもの頃から『何考えてるのかわからない子で困った』と母に言われるたびに、『私が本音を出すと、あなたがヒステリックにわめくからでしょ』と思って腹を立てていましたが。<br>何考えてるのか、わからないなら、わかるように表現します！！<br>実家でキレ散らかします❣️<br>たけしさん、本当にありがとうございます🙇‍♀️」</p>
     </div>
@@ -382,11 +385,10 @@
     <div class="voice">
       <p class="q">「たけちゃん、こんにちは。だんだん、意識するだけで心に火が灯る感覚になってきました。伝えたいことは伝えて、家族も変わってきています」</p>
     </div>
-    </div></details>
-  </section>
-
-  <!-- 記事のご案内 -->
-  <section class="block">
+    </div></details> </div></details> </section>
+</div></details>
+<details class="cat-fold"><summary><img class="cat-thumb" src="hisodate-announce-v5.jpg" alt="" loading="lazy">次の一歩<span class="chev">▽</span></summary><div class="cat-body">
+<section class="block">
     <details class="guide-fold-h"><summary><img class="gimg" src="hisodate-announce-v5.jpg" alt="" loading="lazy" width="96" height="96">記事を読む<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">火育て塾の記事は、noteのマガジンにまとめています</p>
     <div class="card">
@@ -397,9 +399,7 @@
     </div>
     <p class="note-mini">記事を通して届ける形の塾です。</p>
   </div></details></section>
-
-  <!-- 集まれ水女子の森のご案内 -->
-  <section class="block">
+<section class="block">
     <details class="guide-fold-h"><summary><img class="gimg" src="mori-card.jpg" alt="" loading="lazy" width="96" height="96">森で休む<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">水女子の共感・憩いの場です</p>
     <div class="card">
@@ -410,9 +410,7 @@
       <a class="btn-apply" href="https://mizujoshinomori.pages.dev/">森に遊びに行く</a>
     </div>
   </div></details></section>
-
-  <!-- 素直力トレーニングのご案内 -->
-  <section class="block">
+<section class="block">
     <details class="guide-fold-h"><summary><img class="gimg" src="gengoka-hisodate.jpg" alt="" loading="lazy" width="96" height="96">言葉を練習する<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">言葉の言い換えを、カードで練習できます</p>
     <div class="card">
@@ -422,19 +420,16 @@
       <a class="btn-apply" href="https://openhearttraining.pages.dev/" target="_blank" rel="noopener">トレーニングをはじめる</a>
     </div>
   </div></details></section>
-
-  <!-- 八つ目：たけちゃんについて -->
-  <section class="block">
-    <h2>たけちゃんについて</h2>
-    <div class="profile">
+</div></details>
+<section class="block">
+    <h2>たけちゃんについて</h2><details class="voice-fold sec-fold"><summary><img class="gimg" src="face-icon.jpg" alt="" loading="lazy" width="96" height="96">プロフィールを見る<span class="chev">▽</span></summary><div class="fold-body"> <div class="profile">
       <img class="face-mini" src="face-icon.jpg" alt="たけちゃん">
       <h3>心体調整塾 たけちゃん</h3>
       <p>僕は「火」が強い人間です。言葉で考えて、言葉で整理するのが得意な分、感じることは苦手でした。妻はその真逆で、たくさん感じているのに言葉にできない、「水」の強い人です。結婚15年の会話の中で、妻が自分の気持ちを言語化して、外に出して表現するのを、たくさん手伝ってきました。</p>
       <p>火の力——言葉にする力で、水の気持ちを言葉に変えるお手伝いをする。それが、火男子の僕だからこそできることだと思っています。</p>
       <p style="text-align:center; font-weight:900; line-height:2.0;">食品工場 製造技術者<br>心と体の整体師研究<br>土木設備 ダム河川 技術者<br>夫婦15年研究</p>
       <p class="sign">心体調整塾 たけちゃん</p>
-    </div>
-  </section>
+    </div> </div></details> </section>
 
   <a class="back-top" href="https://sintaichoseijyuku.pages.dev/">心体調整塾 トップページへ →</a>
 
