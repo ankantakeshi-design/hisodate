@@ -189,6 +189,17 @@
   }
   footer .fname { font-weight:900; color:#2B2B2B; font-size:15px; }
   footer a { color:#2B6CB0; font-weight:700; display:inline-block; padding:10px 8px; }
+
+  .voice-fold{ border:2px solid #EAD9C2; border-radius:16px; background:#FFFDF8; overflow:hidden; margin-top:12px; }
+  .voice-fold summary{
+    list-style:none; cursor:pointer; min-height:56px;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    padding:12px 16px; font-size:16.5px; font-weight:900; color:#4A2F14;
+  }
+  .voice-fold summary::-webkit-details-marker{ display:none; }
+  .voice-fold summary .chev{ font-size:14px; color:#B07B2A; transition:transform .2s ease; }
+  .voice-fold[open ] summary .chev{ transform:rotate(180deg); }
+  .voice-fold .fold-body{ padding:2px 12px 12px; }
 </style>
 <style>
 /* FAQ（よくある質問） */
@@ -347,6 +358,7 @@
     <div class="voice">
       <p class="q">「実家でトラブルになりたくなくて、イヤな気持ちを隠してニコニコしてた。<br>子どもの頃から『何考えてるのかわからない子で困った』と母に言われるたびに、『私が本音を出すと、あなたがヒステリックにわめくからでしょ』と思って腹を立てていましたが。<br>何考えてるのか、わからないなら、わかるように表現します！！<br>実家でキレ散らかします❣️<br>たけしさん、本当にありがとうございます🙇‍♀️」</p>
     </div>
+    <details class="voice-fold"><summary>ほかの感想も見る（5つ）<span class="chev">▽</span></summary><div class="fold-body">
     <div class="voice">
       <p class="q">「ありがとうございます。今日、納得いかないなって思う事が起こったのですが、気持ちを言葉にして伝える事が出来ました。今までの私は上手く言葉に出来なくて、我慢すれば良い、伝わって欲しいなど、モヤモヤしていました。今日、自分の変化が分かりました」</p>
     </div>
@@ -362,6 +374,7 @@
     <div class="voice">
       <p class="q">「たけちゃん、こんにちは。だんだん、意識するだけで心に火が灯る感覚になってきました。伝えたいことは伝えて、家族も変わってきています」</p>
     </div>
+    </div></details>
   </section>
 
   <!-- 記事のご案内 -->
