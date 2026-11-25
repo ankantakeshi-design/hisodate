@@ -200,6 +200,14 @@
   .voice-fold summary .chev{ font-size:14px; color:#B07B2A; transition:transform .2s ease; }
   .voice-fold[open ] summary .chev{ transform:rotate(180deg); }
   .voice-fold .fold-body{ padding:2px 12px 12px; }
+
+  .guide-fold-h{ border:2px solid #EAD9C2; border-radius:16px; background:#FFFDF8; overflow:hidden; }
+  .guide-fold-h>summary{ list-style:none; cursor:pointer; min-height:56px; display:flex; align-items:center; gap:10px; padding:10px 16px; font-size:16.5px; font-weight:900; color:#4A2F14; }
+  .guide-fold-h>summary::-webkit-details-marker{ display:none; }
+  .guide-fold-h>summary .gimg{ width:44px; height:44px; object-fit:cover; border-radius:10px; flex:none; }
+  .guide-fold-h>summary .chev{ margin-left:auto; font-size:14px; color:#B07B2A; transition:transform .2s ease; }
+  .guide-fold-h[open ]>summary .chev{ transform:rotate(180deg); }
+  .guide-fold-h .fold-body{ padding:2px 14px 14px; }
 </style>
 <style>
 /* FAQ（よくある質問） */
@@ -379,7 +387,7 @@
 
   <!-- 記事のご案内 -->
   <section class="block">
-    <h2>記事は、noteで読めます</h2>
+    <details class="guide-fold-h"><summary><img class="gimg" src="hisodate-announce-v5.jpg" alt="" loading="lazy" width="96" height="96">記事を読む<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">火育て塾の記事は、noteのマガジンにまとめています</p>
     <div class="card">
       <span class="tag water">noteマガジン</span>
@@ -388,11 +396,11 @@
       <a class="btn-apply" href="https://note.com/takekasui/m/mca7ae9c34dd7" target="_blank" rel="noopener">マガジンを読む</a>
     </div>
     <p class="note-mini">記事を通して届ける形の塾です。</p>
-  </section>
+  </div></details></section>
 
   <!-- 集まれ水女子の森のご案内 -->
   <section class="block">
-    <h2>集まれ水女子の森</h2>
+    <details class="guide-fold-h"><summary><img class="gimg" src="mori-card.jpg" alt="" loading="lazy" width="96" height="96">森で休む<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">水女子の共感・憩いの場です</p>
     <div class="card">
       <img src="mori-card.jpg" width="1200" height="836" alt="森で休む みーちゃん" style="width:100%; height:auto; border-radius:12px; display:block; margin-bottom:12px;">
@@ -401,11 +409,11 @@
       <p>新月・満月のカレンダーとメッセージ、惑星の順行・逆行、水女子あるある、みーちゃんの日記、うらないなど。環境の影響を受けやすい水女子が、静かに休んでいける場所です。</p>
       <a class="btn-apply" href="https://mizujoshinomori.pages.dev/">森に遊びに行く</a>
     </div>
-  </section>
+  </div></details></section>
 
   <!-- 素直力トレーニングのご案内 -->
   <section class="block">
-    <h2>素直力トレーニング</h2>
+    <details class="guide-fold-h"><summary><img class="gimg" src="gengoka-hisodate.jpg" alt="" loading="lazy" width="96" height="96">言葉を練習する<span class="chev">▽</span></summary><div class="fold-body">
     <p class="sub">言葉の言い換えを、カードで練習できます</p>
     <div class="card">
       <span class="tag water">無料・登録不要</span>
@@ -413,7 +421,7 @@
       <p>「つい言ってしまう言葉」を、素直な本音の言葉に言い換えるトレーニングです。感じたことを言葉にする練習に、どうぞ。</p>
       <a class="btn-apply" href="https://openhearttraining.pages.dev/" target="_blank" rel="noopener">トレーニングをはじめる</a>
     </div>
-  </section>
+  </div></details></section>
 
   <!-- 八つ目：たけちゃんについて -->
   <section class="block">
